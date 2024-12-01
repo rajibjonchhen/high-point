@@ -1,1 +1,1 @@
-High Point try the new best
+High Point try the new best. Suryabinayak, Bhaktapur
