@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title><%- head.title %></title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/src/img/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon/16x16.png">
+    <meta name="description" content="<%- head.meta.description %>" />
+    <meta name="keywords" content="<%- head.meta.keywords %>" />
+    <meta name="author" content="<%- head.meta.author %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="scroll-smooth">
+<header class="py-4 fixed w-full top-0 z-50 transition duration-500 ease-in-out">
+    <div class="container flex justify-between items-center">
+        <span class="text-3xl text-white text-lg ">
+            <img class="w-11.5 h-11.5 rounded-full" src="/src/img/logo/hp.png" alt="brand">
+            High Point</span>
+        <nav class="flex justify-end items-center">
+            <a title="Our Email" class="group text-lg leading-5.25 text-center inline-block box-border rounded border border-blue-light hover:border-blue-light-accent active:border-transparent active:bg-blue-light-accent py-3.75 px-3 xs:py-3.125 xs:px-7.56" target="_blank" href="<%- links.email %>">
+                <svg class="xs:hidden w-5.5 h-4 stroke-blue-light group-hover:stroke-blue-light-accent group-active:stroke-blue-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 16"><path d="M20.75 13.75V2.25a1 1 0 0 0-1-1H2.25a1 1 0 0 0-1 1v11.5a1 1 0 0 0 1 1h17.5a1 1 0 0 0 1-1z"/><path d="M20.75 3.49 11 8 1.25 3.49"/></svg>
+                <span class="hidden xs:inline text-blue-light group-hover:text-blue-light-accent group-active:text-blue-middle select-none">Contact us</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="bg-blue-strong">
+        <!-- <img src="/src//img/high-point.png" alt="visiting card"/> -->
+        <div class="container flex flex-col items-center justify-center h-screen lg:h-[85vh] min-h-120 max-h-320 bg-header bg-[left_-25rem_top] bg-[length:1200px] md:bg-[left_-5rem_top] md:bg-contain bg-no-repeat">
+            <h1 class="md:font-normal lg:font-medium text-5xl lg:text-[64px] xl:text-7xl leading-14.25 lg:leading-19 xl:leading-21.5 tracking-wider text-white select-none">
+                <span>Ready to elevate your wardrobe!</span>
+            </h1>
+            <h2 class="mt-4 text-3xl text-white select-none">
+                All Season Styles, Year-Round Sales, Affordable Prices
+            </h2>
+        </div>
+    </section>
+<!--gap-30 sm:gap-5 sm:gap-y-40 lg:gap-25 lg:gap-y-37.5-->
+    <section class="container grid grid-cols-1 sm:grid-cols-2 mt-15 mb-30 sm:my-47.5 lg:my-37.5">
+        <% collections.forEach(function(collection){ %>
+        <article class="text-grey-blue sm:odd:mr-[0.625rem] sm:even:ml-[0.625rem] lg:odd:mr-[3rem] lg:even:ml-[3rem] mb-[7.5rem] sm:mb-[10rem] lg:mb-[9.375rem] sm:penultimate:mb-0 last:mb-0">
+            <header class="mb-3 relative ">
+                <% if(collection.images) { %>
+                <picture >
+                    <% collection.images.forEach((image) => { %><source type="<%- image.type %>" srcset="<%- image.src %>"><% }); %>
+                    <img class="mb-8 h-44 w-full object-cover" src="<%- collection.images[0].src %>?url" alt="<%- collection.title %>">
+                </picture>
+                <div class="company-logo-holder px-3.5 absolute top-0 left-0 flex justify-center items-center h-12 w-auto bg-white rounded-br-3xl" >
+                    <%- collection.logo %>
+                </div>
+                <% } %>
+                <h2 class="font-medium text-[32px] leading-9.5 tracking-wider"><%- collection.title %></h2>
+            </header>
+            <p class="mb-6 text-lg leading-7 font-normal"><%- collection.text %></p>
+            <!-- <blockquote class="mb-6 italic font-extralight text-2xl leading-8.5 max-w-[486px]">“<%- collection.quote %>”</blockquote> -->
+            <!-- <footer class="flex space-x-3">
+                <img class="w-11.5 h-11.5 rounded-full" src="<%- collection.author.avatar %>" alt="<%- collection.author.name %>">
+                <div class="flex flex-col justify-between text-sm leading-4.125 text-grey-squirrel">
+                    <div class="font-medium text-lg leading-5.25 text-grey-blue"><%- collection.author.name %></div>
+                    <%- collection.author.position %>
+                </div>
+            </footer> -->
+        </article>
+        <% }); %>
+    </section>
+
+    <section class="flex flex-col items-center px-5 py-37.5 bg-blue-extralight">
+        <h2 class="mb-6 font-medium text-3xl sxs:text-[32px] leading-9.5 tracking-wider text-grey-blue select-none">Contact us with</h2>
+        <a target="_blank" title="Our Email" class="text-lg leading-5.25 w-full xs:w-83.75 h-16 flex space-x-6 justify-center items-center mb-3 bg-white rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="<%- links.email %>">
+            <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 18"><path class="fill-blue-middle" d="M29.333.333H12A2.674 2.674 0 0 0 9.333 3v12A2.667 2.667 0 0 0 12 17.667h17.333A2.657 2.657 0 0 0 32 15V3A2.667 2.667 0 0 0 29.333.333zm0 4.894-8.666 4.44L12 5.227V3l8.667 4.413L29.333 3v2.227zM6.667 15c0 .227.04.44.066.667h-5.4c-.736 0-1.333-.6-1.333-1.333C0 13.6.597 13 1.333 13h5.334v2zM4 2.334h2.733c-.026.226-.066.44-.066.666v2H4c-.733 0-1.333-.6-1.333-1.333S3.267 2.334 4 2.334zM1.333 9c0-.733.6-1.333 1.334-1.333h4v2.667h-4c-.734 0-1.334-.6-1.334-1.334z"/></svg>
+            <span class="select-none">Email</span>
+        </a>
+        <a target="_blank" title="Our LinkedIn" class="text-lg leading-5.25 w-full xs:w-83.75 h-16 flex space-x-6 justify-center items-center mb-3 bg-white rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="<%- links.linkedin %>">
+            <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#0A66C2" d="M27.265 27.266h-4.74v-7.425c0-1.771-.032-4.05-2.467-4.05-2.47 0-2.847 1.929-2.847 3.92v7.555H12.47v-15.27h4.551v2.087h.064a4.988 4.988 0 0 1 4.49-2.467c4.806 0 5.692 3.161 5.692 7.273l-.002 8.377zM7.12 9.909a2.752 2.752 0 1 1 0-5.503 2.752 2.752 0 0 1 0 5.503zm2.37 17.357H4.744v-15.27H9.49v15.27zM29.63.002H2.36A2.335 2.335 0 0 0 0 2.31v27.38A2.337 2.337 0 0 0 2.361 32H29.63A2.342 2.342 0 0 0 32 29.69V2.308A2.34 2.34 0 0 0 29.63 0"/></svg>
+            <span class="select-none">LinkedIn</span>
+        </a>
+    </section>
+</main>
+
+<footer class="bg-blue-middle">
+    <div class="h-20 container flex justify-between items-center">
+        <div class="flex flex-row space-x-3 items-center text-xs leading-6 text-blue-light">
+            <svg class="h-10 w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.2 133.9"><path class="fill-blue-light" d="M98.353 51.816c-.6-.9-1.8-1.2-2.8-.6l-12.2 7.8c2.6 4 4.1 8.7 4.1 13.7 0 14-11.4 25.4-25.4 25.4-14 0-25.4-11.4-25.4-25.4 0-14 11.4-25.4 25.4-25.4 3.3 0 6.4.6 9.3 1.8l-9.3 23.6 13.7-21.3 7.8-12.2c.6-.9.3-2.1-.6-2.8-1.8-1.2-3.6-2.2-5.5-3.2-20.3-10.1-45.1-6.4-61.5 10-20.8 20.8-20.8 54.6 0 75.4 20.8 20.8 54.6 20.8 75.4 0 18.4-18 20.7-46.1 7-66.8m36.2-51.5c-10.2 2.2-20.6 7.8-29.4 16.6-2.2 2.2-4.2 4.5-6 6.8l-8.7-1.2-4.4 4.4c4 1.9 8.1 4.6 11.8 8.1l-1.9 1.9 2 2 13.1-13.1-9.6 13c2.7 3.2 4.9 6.6 6.5 10l4.4-4.4-1.2-8.7c2.4-1.8 4.6-3.8 6.8-6 8.9-8.7 14.5-19.2 16.6-29.4"/></svg>
+            <span class="select-none">© <%= new Date().getFullYear(); %> Codex Software</span>
+        </div>
+        <div class="flex flex-row space-x-3">
+            <a class="group" target="_blank" title="Our Email" href="<%- links.email %>">
+                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle class="fill-blue-light group-hover:fill-blue-light-accent group-active:fill-blue-dark-accent" cx="16" cy="16" r="15.5"/><path class="fill-blue-middle group-active:fill-white" d="M21.333 13.333 16 16.667l-5.334-3.334V12L16 15.333 21.333 12v1.333zm0-2.666H10.666c-.74 0-1.333.593-1.333 1.333v8a1.333 1.333 0 0 0 1.333 1.333h10.667A1.333 1.333 0 0 0 22.666 20v-8a1.333 1.333 0 0 0-1.333-1.333z"/></svg>
+            </a>
+            <a class="group" target="_blank" title="Our LinkedIn" href="<%- links.linkedin %>">
+                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path class="fill-transparent group-active:fill-white" d="M6 25h19V6H6z"/><path class="fill-blue-light group-hover:fill-blue-light-accent group-active:fill-blue-dark-accent" d="M16 .64C7.516.64.64 7.517.64 16S7.516 31.36 16 31.36c8.483 0 15.36-6.877 15.36-15.36S24.483.64 16 .64zm-3.76 21.726H9.13v-10.01h3.11v10.01zm-1.575-11.238c-.982 0-1.617-.696-1.617-1.557 0-.878.654-1.554 1.657-1.554 1.003 0 1.618.676 1.637 1.554 0 .86-.634 1.557-1.677 1.557zM23.6 22.366h-3.11V16.82c0-1.291-.452-2.168-1.577-2.168-.859 0-1.37.594-1.595 1.165-.083.203-.104.491-.104.777v5.772h-3.112V15.55c0-1.25-.04-2.295-.082-3.194h2.703l.142 1.39h.063c.41-.652 1.412-1.615 3.09-1.615 2.047 0 3.582 1.37 3.582 4.318v5.918z"/></svg>
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+    window.addEventListener('scroll',()=>document.querySelector('body>header').classList[window.scrollY>5 ?'add':'remove']('bg-blue-middle'))
+</script>
+<!--<script>-->
+<!--  window.onload =() =>{-->
+<!--    const credentials = localStorage.getItem("credentials")-->
+<!--    console.log("credentials", credentials)-->
+<!--    if(!credentials){-->
+<!--    console.log("routing",  window.location)-->
+<!--    window.location.replace("/credentials/index.html")-->
+<!--    }-->
+<!--  }-->
+<!--</script>-->
+</body>
+</html>
