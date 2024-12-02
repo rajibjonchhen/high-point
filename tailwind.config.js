@@ -91,7 +91,6 @@ module.exports = {
         'blue-light-accent': '#A7D6FA',
         'blue-dark-accent': '#529AD0',
         'blue-extralight': '#DFE9F5',
-        'parrot-green':'#2BC9AF '
       },
       backgroundImage: {
         'header': "url(\"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1267 544'%3E%3Cpath fill='url(%23a)' fill-opacity='.7' d='M0 0h1267L663.5 543.349H0V0z'/%3E%3Cpath fill='url(%23b)' fill-opacity='.7' d='M0 0h869L265.5 543.349H0V0z'/%3E%3Cpath fill='url(%23c)' fill-opacity='.7' d='M0 0h459L0 413.251V0z'/%3E%3Cdefs%3E%3ClinearGradient id='a' x1='844' x2='1158.84' y1='40.951' y2='203.064' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230A1439'/%3E%3Cstop offset='1' stop-color='%23182451'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='578.876' x2='821.774' y1='40.951' y2='126.732' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230A1439'/%3E%3Cstop offset='1' stop-color='%23182451'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' x1='305.758' x2='441.87' y1='31.146' y2='64.528' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230A1439'/%3E%3Cstop offset='1' stop-color='%23182451'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E\")",

@@ -30,15 +30,15 @@ export default defineConfig({
                 injectOptions: {
                     data: {
                         head: {
-                            title: "Codex Software",
+                            title: "High Point",
                             meta: {
-                                description: "Codex Software Website",
-                                keywords: "codex software, software development",
-                                author: "Codex Software",
+                                description: "High Point Website",
+                                keywords: "High Point, software development",
+                                author: "High Point",
                             }
                         },
                         links: {
-                            email: "mailto:contact@codex-soft.com",
+                            email: "mailto:shivaawalwa@gmail.com",
                             linkedin: "https://www.linkedin.com/company/codex-software/",
                         },
                         collections: [
