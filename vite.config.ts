@@ -16,7 +16,6 @@ export default defineConfig({
       rollupOptions: {
         input: {
           index: resolve(__dirname, "index.html"),
-        //   credentials: resolve(__dirname, "/credentials/index.html")
         }
       }
     },
