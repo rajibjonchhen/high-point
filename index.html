@@ -16,8 +16,7 @@
 <body class="scroll-smooth">
 <header class="brand-col py-4 fixed w-full top-0 z-50 transition duration-500 ease-in-out bg-hero">
     <div class="container flex justify-between items-center">
-        
-            <img src="/src/img/logo/brand-removebg-preview.png" alt="visiting card" width="200" height="auto"/>
+            <img src="/src/img/logo/brand-nobg.png" alt="visiting card" width="200" height="auto"/>
         <nav class="flex justify-end items-center">
             <a title="Our Email" class="group text-lg leading-5.25 text-center inline-block box-border rounded border border-white hover:border-white active:border-transparent active:bg-blue-light-accent py-3.75 px-3 xs:py-3.125 xs:px-7.56" target="_blank" href="<%- links.email %>">
                 <svg class="xs:hidden w-5.5 h-4 stroke-white group-hover:stroke-white group-active:stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 16"><path d="M20.75 13.75V2.25a1 1 0 0 0-1-1H2.25a1 1 0 0 0-1 1v11.5a1 1 0 0 0 1 1h17.5a1 1 0 0 0 1-1z"/><path d="M20.75 3.49 11 8 1.25 3.49"/></svg>
@@ -28,19 +27,7 @@
 </header>
 
 <main>
-    <!-- <section class="bg-hero">
-        <div class="container flex flex-col items-center justify-center h-screen lg:h-[100vh] min-h-120 max-h-320  bg-[left_-25rem_top] bg-[length:1200px] md:bg-[left_-5rem_top] md:bg-contain bg-no-repeat">
-             <img src="/src//img/hero.png" alt="visiting card" width="80%" height="auto"/>
-            <h1 class="md:font-normal lg:font-medium text-4xl lg:text-[64px] xl:text-7xl leading-14.25 lg:leading-19 xl:leading-21.5 tracking-wider text-white select-none">
-                <span>Ready to elevate your wardrobe!</span>
-            </h1>
-            <h2 class="mt-4 text-3xl text-white select-none">
-                All Season Styles, Year-Round Sales, Affordable Prices
-            </h2>
-        </div>
-    </section> -->
-<!--gap-30 sm:gap-5 sm:gap-y-40 lg:gap-25 lg:gap-y-37.5-->
-<section class="bg-blue-strong">
+<section class="bg-blue-strong  mt-12 ">
     <div class=" flex items-center justify-center h-screen lg:h-[100vh] min-h-120 max-h-320 bg-header  bg-gradient-to-br from-pink-900 from-5% to-pink-500 h-64 w-full">
     <div class="relative isolate overflow-hidden  py-24 sm:py-32"  >
     <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-20">
@@ -86,25 +73,18 @@
         <article class="text-grey-blue sm:odd:mr-[0.625rem] sm:even:ml-[0.625rem] lg:odd:mr-[3rem] lg:even:ml-[3rem] mb-[7.5rem] sm:mb-[10rem] lg:mb-[9.375rem] sm:penultimate:mb-0 last:mb-0">
             <header class="mb-3 relative ">
                 <% if(collection.images) { %>
-                <picture >
-                    <% collection.images.forEach((image) => { %><source type="<%- image.type %>" srcset="<%- image.src %>"><% }); %>
-                    <img class="mb-8 h-44 w-full object-cover" src="<%- collection.images[0].src %>?url" alt="<%- collection.title %>">
-                </picture>
-                <div class="company-logo-holder px-3.5 absolute top-0 left-0 flex justify-center items-center h-12 w-auto bg-white rounded-br-3xl" >
-                    <%- collection.logo %>
-                </div>
-                <% } %>
-                <h2 class="font-medium text-[32px] leading-9.5 tracking-wider"><%- collection.title %></h2>
+                    <picture >
+                        <% collection.images.forEach((image) => { %><source type="<%- image.type %>" srcset="<%- image.src %>"><% }); %>
+                        <img class="mb-8 h-44 w-full object-cover" src="<%- collection.images[0].src %>?url" alt="<%- collection.title %>">
+                    </picture>
+                    <div class="company-logo-holder px-3.5 absolute top-0 left-0 flex justify-center items-center h-12 w-auto bg-white rounded-br-3xl" >
+                        <%- collection.logo %>
+                    </div>
+                    <% } %>
+                    <h2 class="font-medium text-[32px] leading-9.5 tracking-wider"><%- collection.title %></h2>
+                    <blockquote class="mb-6 italic font-extralight text-2xl leading-8.5 max-w-[486px]">“<%- collection.quote %>”</blockquote>
             </header>
             <p class="mb-6 text-lg leading-7 font-normal"><%- collection.text %></p>
-            <!-- <blockquote class="mb-6 italic font-extralight text-2xl leading-8.5 max-w-[486px]">“<%- collection.quote %>”</blockquote> -->
-            <!-- <footer class="flex space-x-3">
-                <img class="w-11.5 h-11.5 rounded-full" src="<%- collection.author.avatar %>" alt="<%- collection.author.name %>">
-                <div class="flex flex-col justify-between text-sm leading-4.125 text-grey-squirrel">
-                    <div class="font-medium text-lg leading-5.25 text-grey-blue"><%- collection.author.name %></div>
-                    <%- collection.author.position %>
-                </div>
-            </footer> -->
         </article>
         <% }); %>
     </section>
@@ -125,7 +105,7 @@
 <footer class="brand-col">
     <div class="h-20 container flex justify-between items-center">
         <div class="flex flex-row space-x-3 items-center text-xs leading-6 text-blue-light">
-            <img src="/src/img/logo/brand-removebg-preview.png" alt="brand logo" width="150" height="auto"/>
+            <img src="/src/img/logo/brand-nobg.png" alt="brand logo" width="150" height="auto"/>
             <span class="select-none text-white">© <%= new Date().getFullYear(); %> High Point</span>
         </div>
         <div class="flex flex-row space-x-3">

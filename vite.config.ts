@@ -38,67 +38,45 @@ export default defineConfig({
                         },
                         links: {
                             email: "mailto:shivaawalwa@gmail.com",
-                            linkedin: "https://www.linkedin.com/company/codex-software/",
+                            whatsApp: "https://wa.me/[+9779841114088]",
                         },
                         collections: [
                             {
-                                title: "Ladies’ Fashion",
+                                title: "High Point Fashion",
                                 text: "From casual wear to elegant dresses, our ladies' collection features the latest trends and timeless classics. Whether you’re looking for everyday comfort or something special for a night out, we have styles that cater to every taste and body type.",
-                                quote: "Their services were crucial during product development and contributed much to the successful closure of the deal. We won’t be able to achieve this without Codex.",
-                                author: {
-                                    name: "Chris Knighton",
-                                    position: "Global Sales Director",
-                                    avatar: getAvatar("oneflow"),
-                                },
+                                quote: "Unleash Your Style, Embrace Every Occasion!",
                                 images: [
-                                    { type: "image/png", src: "/src/img/display/all.png" },
-                                    { type: "image/webp", src: "/src/img/display/Imageoneflow.webp" },
+                                    { type: "image/png", src: "/src/img/display/fashion1.png" },
                                 ],
                                 logo: getLogo("oneflow")
 
                             },
                             {
-                                title: "All-Season Styles",
-                                text: "Fashion knows no season at [Your Store Name]. Our versatile collections are designed to transition seamlessly through the seasons, ensuring that you always have the right outfit at your fingertips. Whether it’s summer dresses, winter coats, or everything in between, we’ve got you covered!",
-                                quote: "Brilliant developers, you’ll hardly find any better. Happy to work with them any day. In fact, I am already working with them on my next startup.",
-                                author: {
-                                    name: "Ben Zhuk",
-                                    position: "Co-founder, Head of Product",
-                                    avatar: getAvatar("pronoun"),
-                                },
+                                title: "High Point Footwear",
+                                text: "Fashion knows no season at [Your Store Name]. From stylish summer sandals to cozy winter boots, our versatile footwear collections keep you covered year-round. Step into style and comfort with shoes for every occasion!",
+                                quote: "Step into Style, Anytime!",
                                 images: [
-                                    { type: "image/png", src: "/src/img/display/seasons.png" },
-                                    { type: "image/webp", src: "/src/img/display/Imagepronoun.webp" },
+                                    { type: "image/png", src: "/src/img/display/shoes2.png" },
                                 ],
                                 logo: getLogo("pronoun")
                             },
                             {
-                                title: "Year-Round Sales",
-                                text: "Why wait for special occasions? At [Your Store Name], we offer sales all around the year! Enjoy incredible discounts on your favorite styles without compromising on quality. Keep an eye on our website for exclusive promotions and seasonal sales that make shopping even more enjoyable.",
-                                quote: "Brilliant developers, you’ll hardly find any better. Happy to work with them any day. In fact, I am already working with them on my next startup.",
-                                author: {
-                                    name: "Ben Zhuk",
-                                    position: "Co-founder, Head of Product",
-                                    avatar: getAvatar("pronoun"),
-                                },
+                                title: "High Point Kitchenware",
+                                text: "Why wait? Shop high-quality kitchenware, stoves, solar heaters, and water purifiers year-round with warranties and amazing discounts. Follow us on Facebook for exclusive deals. Upgrade your kitchen today!",
+                                quote: "Elevate Your Kitchen, Every Day!",
+                                
                                 images: [
-                                    { type: "image/png", src: "/src/img/display/sale.png" },
-                                    { type: "image/webp", src: "/src/img/display/Imagepronoun.webp" },
+                                    { type: "image/png", src: "/src/img/display/kitchen2.png" },
                                 ],
                                 logo: getLogo("pronoun")
                             },
                             {
-                                title: "Affordable Prices",
+                                title: "High Point Apparel",
                                 text: "Looking great shouldn’t cost a fortune! We pride ourselves on offering high-quality clothing at cheaper prices. Our commitment to affordability means you can refresh your wardrobe regularly without guilt.",
-                                quote: "Brilliant developers, you’ll hardly find any better. Happy to work with them any day. In fact, I am already working with them on my next startup.",
-                                author: {
-                                    name: "Ben Zhuk",
-                                    position: "Co-founder, Head of Product",
-                                    avatar: getAvatar("pronoun"),
-                                },
+                                quote: "Style Smart, Spend Less!",
+                                
                                 images: [
-                                    { type: "image/png", src: "/src/img/display/affordable.png" },
-                                    { type: "image/webp", src: "/src/img/display/Imagepronoun.webp" },
+                                    { type: "image/png", src: "/src/img/display/fashion.png" },
                                 ],
                                 logo: getLogo("pronoun")
                             }
@@ -106,23 +84,6 @@ export default defineConfig({
                     },
                 }
             },
-            {
-                entry: "credentials/index.html",
-                filename: "credentials/index.html",
-                template: "credentials/index.html",
-                injectOptions:{
-                    data:{
-                        head:{
-                            title:"credentials",
-                            meta: {
-                                description: "High Point Website",
-                                keywords: "high point, clothing store",
-                                author: "High Point",
-                            }
-                        }
-                    }
-                }
-            }
             ],
 
         }),
