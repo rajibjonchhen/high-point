@@ -44,4 +44,13 @@
     url('/src/fonts/roboto/500.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
+.brand-col{
+ background-color: #9d2155;
+}
+.brand-text{
+ color: #9d2155;
+}
 
+.bg-hero-img {
+    background-image: url("./img/hero.png");
+}
