@@ -17,7 +17,7 @@
 <header class="brand-col py-4 fixed w-full top-0 z-50 transition duration-500 ease-in-out bg-hero">
     <div class="container flex justify-between items-center">
         
-            <img src="/src/img/logo/brand.png" alt="visiting card" width="200" height="auto"/>
+            <img src="/src/img/logo/brand-removebg-preview.png" alt="visiting card" width="200" height="auto"/>
         <nav class="flex justify-end items-center">
             <a title="Our Email" class="group text-lg leading-5.25 text-center inline-block box-border rounded border border-white hover:border-white active:border-transparent active:bg-blue-light-accent py-3.75 px-3 xs:py-3.125 xs:px-7.56" target="_blank" href="<%- links.email %>">
                 <svg class="xs:hidden w-5.5 h-4 stroke-white group-hover:stroke-white group-active:stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 16"><path d="M20.75 13.75V2.25a1 1 0 0 0-1-1H2.25a1 1 0 0 0-1 1v11.5a1 1 0 0 0 1 1h17.5a1 1 0 0 0 1-1z"/><path d="M20.75 3.49 11 8 1.25 3.49"/></svg>
@@ -40,11 +40,11 @@
         </div>
     </section> -->
 <!--gap-30 sm:gap-5 sm:gap-y-40 lg:gap-25 lg:gap-y-37.5-->
-<section class="bg-blue-strong  mt-12 ">
+<section class="bg-blue-strong">
     <div class=" flex items-center justify-center h-screen lg:h-[100vh] min-h-120 max-h-320 bg-header  bg-gradient-to-br from-pink-900 from-5% to-pink-500 h-64 w-full">
     <div class="relative isolate overflow-hidden  py-24 sm:py-32"  >
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-20">
+      <div class="mx-auto max-w-2xl lg:mx-0" >
         <p class="text-4xl font-semibold tracking-tight text-white sm:text-7xl">Ready to elevate your lifestyle !</p>
         <p class="mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-xl/8">All Season Styles, Year-Round Sales, Affordable Prices</p>
       </div>
@@ -125,7 +125,7 @@
 <footer class="brand-col">
     <div class="h-20 container flex justify-between items-center">
         <div class="flex flex-row space-x-3 items-center text-xs leading-6 text-blue-light">
-            <img src="/src/img/logo/brand.png" alt="brand logo" width="150" height="auto"/>
+            <img src="/src/img/logo/brand-removebg-preview.png" alt="brand logo" width="150" height="auto"/>
             <span class="select-none text-white">© <%= new Date().getFullYear(); %> High Point</span>
         </div>
         <div class="flex flex-row space-x-3">
@@ -139,7 +139,7 @@
     </div>
 </footer>
 <script>
-    // window.addEventListener('scroll',()=>document.querySelector('body>header').classList[window.scrollY>5 ?'add':'remove']('brand-col'))
+    window.addEventListener('scroll',()=>document.querySelector('body>header').classList[window.scrollY>5 ?'add':'remove']('brand-col'))
 </script>
 </body>
 </html>
