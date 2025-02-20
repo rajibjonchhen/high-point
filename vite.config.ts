@@ -5,7 +5,7 @@ import { createHtmlPlugin } from "vite-plugin-html"
 import viteCompression from "vite-plugin-compression"
 
 const getLogo = (name) => {
-    const path = `./src/img/logo/${"star"}.svg`;
+    const path = `./src/img/logo/${name}.svg`;
     return fs.readFileSync(path)
 }
 
@@ -47,9 +47,13 @@ export default defineConfig({
                                 quote: "Unleash Your Style, Embrace Every Occasion!",
                                 images: [
                                     { type: "image/png", src: "/src/img/display/fashion1.png" },
+                                    { type: "image/png", src: "/src/img/display/fashion1.webp" },
                                 ],
-                                logo: getLogo("oneflow")
-
+                                social: {
+                                    name: 'fb',
+                                    logo: getLogo("fb"),
+                                    link: '',
+                                },
                             },
                             {
                                 title: "High Point Footwear",
@@ -57,8 +61,13 @@ export default defineConfig({
                                 quote: "Step into Style, Anytime!",
                                 images: [
                                     { type: "image/png", src: "/src/img/display/shoes2.png" },
+                                    { type: "image/png", src: "/src/img/display/shoes2.webp" },
                                 ],
-                                logo: getLogo("pronoun")
+                                social: {
+                                    name: 'fb',
+                                    logo: getLogo("fb"),
+                                    link: '',
+                                },
                             },
                             {
                                 title: "High Point Kitchenware",
@@ -67,18 +76,28 @@ export default defineConfig({
                                 
                                 images: [
                                     { type: "image/png", src: "/src/img/display/kitchen2.png" },
+                                    { type: "image/png", src: "/src/img/display/kitchen2.webp" },
                                 ],
-                                logo: getLogo("pronoun")
+                                social: {
+                                    name: 'fb',
+                                    logo: getLogo("fb"),
+                                    link: '',
+                                },
                             },
                             {
-                                title: "High Point Apparel",
+                                title: "High Point Fashion2",
                                 text: "Looking great shouldn’t cost a fortune! We pride ourselves on offering high-quality clothing at cheaper prices. Our commitment to affordability means you can refresh your wardrobe regularly without guilt.",
                                 quote: "Style Smart, Spend Less!",
                                 
                                 images: [
                                     { type: "image/png", src: "/src/img/display/fashion.png" },
+                                    { type: "image/png", src: "/src/img/display/fashion.webp" },
                                 ],
-                                logo: getLogo("pronoun")
+                                social: {
+                                    name: 'fb',
+                                    logo: getLogo("fb"),
+                                    link: '',
+                                },
                             }
                         ]
                     },

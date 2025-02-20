@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/src/style.css">
 </head>
 <body class="scroll-smooth">
-<header class="brand-col py-4 fixed w-full top-0 z-50 transition duration-500 ease-in-out bg-hero">
+<!-- <header class="brand-col py-4 fixed w-full top-0 z-50 transition duration-500 ease-in-out bg-hero">
     <div class="container flex justify-between items-center">
         
             <img src="/src/img/logo/brand-nobg.png" alt="visiting card" width="200" height="auto"/>
@@ -25,51 +25,70 @@
             </a>
         </nav>
     </div>
-</header>
+</header> -->
 
+<nav class="fixed w-full top-0 left-0 right-0 z-50    duration-500 ease-in-out">
+    <!-- py-4 fixed w-full top-0 z-50  duration-500 ease-in-out -->
+     <div class="container flex justify-between items-center">
+
+         <img src="/src/img/logo/brand-nobg.png" alt="visiting card" width="200" height="auto"/>
+         <div class="container mx-auto px-4 py-3 flex justify-end items-center">
+             <!-- Your navigation content here -->
+             <a title="Our Email" class="group text-lg leading-5.25 text-center inline-block box-border rounded border border-white hover:border-white active:border-transparent active:bg-blue-light-accent py-3.75 px-3 xs:py-3.125 xs:px-7.56" target="_blank" href="<%- links.email %>">
+                 <svg class="xs:hidden w-5.5 h-4 stroke-white group-hover:stroke-white group-active:stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 16"><path d="M20.75 13.75V2.25a1 1 0 0 0-1-1H2.25a1 1 0 0 0-1 1v11.5a1 1 0 0 0 1 1h17.5a1 1 0 0 0 1-1z"/><path d="M20.75 3.49 11 8 1.25 3.49"/></svg>
+                 <span class="hidden xs:inline text-white group-hover:text-blue-light-accent group-active:text-white select-none">Contact us</span>
+                </a>
+            </div>
+        </div>
+</nav>
 <main>
-<section class="bg-blue-strong  mt-12 ">
-    <div class=" flex items-center justify-center h-screen lg:h-[100vh] min-h-120 max-h-320 bg-header  bg-gradient-to-br from-pink-900 from-5% to-pink-500 h-64 w-full">
-    <div class="relative isolate overflow-hidden  py-24 sm:py-32"  >
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <p class="text-4xl font-semibold tracking-tight text-white sm:text-7xl">Ready to elevate your lifestyle !</p>
-        <p class="mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-xl/8">All Season Styles, Year-Round Sales, Affordable Prices</p>
+    <div class="relative min-h-screen">
+      
+        <!-- Hero Section -->
+        <div class="pt-16 md:pt-20 lg:pt-24 bg-gradient-to-br from-pink-900 to-pink-500 min-h-screen flex items-center">
+          <div class="container mx-auto px-4">
+            <div class="text-center  md:mt-16 sm:mt-16 xs:mt-12">
+              <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+                Ready to elevate your lifestyle!
+              </h1>
+              <p class="text-xl sm:text-2xl text-gray-200 mb-8">
+                All Season Styles, Year-Round Sales, Affordable Prices
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <!-- Repeat this block for each store -->
+                
+                <a href="#" class="flex flex-col items-center rounded-lg p-4 transition duration-300 hover:bg-opacity-20">
+                    <h3 class="text-xl font-semibold text-white mb-1">High Point Fashion</h3>
+                    <p class="text-sm text-gray-300 mb-4">Suryabinayak, Bhaktapur</p>
+                    <img class="w-full h-40 object-cover rounded" src="./src/img/logo/hpfa.JPG" alt="High Point Fashion logo">
+                  </a>
+                  
+                  <a href="#" class="flex flex-col items-center  rounded-lg p-4 transition duration-300 hover:bg-opacity-20">
+                    <h3 class="text-xl font-semibold text-white mb-1">High Point Footwear</h3>
+                    <p class="text-sm text-gray-300 mb-4">Tibukchhen, Bhaktapur</p>
+                    <img class="w-full h-40 object-cover rounded" src="./src/img/logo/hpfo.JPG" alt="High Point Footwear logo">
+                  </a>
+                  
+                  <a href="#" class="flex flex-col items-center  rounded-lg p-4 transition duration-300 hover:bg-opacity-20">
+                    <h3 class="text-xl font-semibold text-white mb-1">High Point Kitchenware</h3>
+                    <p class="text-sm text-gray-300 mb-4">Tulachhen, Bhaktapur</p>
+                    <img class="w-full h-40 object-cover rounded" src="./src/img/logo/hpk.JPG" alt="High Point Kitchenware logo">
+                  </a>
+                  <a href="#" class="flex flex-col items-center  rounded-lg p-4 transition duration-300 hover:bg-opacity-20">
+                    <h3 class="text-xl font-semibold text-white mb-1">High Point Apparel</h3>
+                    <p class="text-sm text-gray-300 mb-4">Tulachhen, Bhaktapur</p>
+                    <img class="w-full h-40 object-cover rounded" src="./src/img/logo/hpf.JPG" alt="High Point Apparel logo">
+                  </a>
+                <!-- Repeat for other stores -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-         <a href="#" class="flex flex-col gap-1">
-             <dd class="text-2xl font-semibold tracking-tight text-white">High Point Fashion</dd>
-            <dt class="text-base/7 text-gray-300">Suryabinayak,Bhaktapur</dt>
-            <img class="mb-8 h-44 w-full object-cover" src="./src//img/logo/hpfa.JPG" alt="high point fashion logo">
+      
+      
 
-            </a>
-          <a href="#" class="flex flex-col gap-1">
-              <dd class="text-2xl font-semibold tracking-tight text-white">High Point Footwear</dd>
-            <dt class="text-base/7 text-gray-300">Tibukchhen, Bhaktapur </dt>
-            <img class="mb-8 h-44 w-full object-cover" src="./src//img/logo/hpfo.JPG" alt="high point footware logo">
-
-          </a>
-          <a href="#" class="flex flex-col gap-1">
-              <dd class="text-2xl font-semibold tracking-tight text-white">High Point Kitchenware</dd>
-            <dt class="text-base/7 text-gray-300">Tulachhen, Bhaktapur</dt>
-            <img class="mb-8 h-44 w-full object-cover" src="./src//img/logo/hpk.JPG" alt="high point kitchenware logo">
-
-          </a>
-          <a href="#" class="flex flex-col gap-1">
-              <dd class="text-2xl font-semibold tracking-tight text-white">High Point Apperal</dd>
-            <dt class="text-base/7 text-gray-300">Tulachhen, Bhaktapur</dt>
-            <img class="mb-8 h-44 w-full object-cover" src="./src//img/logo/hpf.JPG" alt="high point apparel logo">
-
-          </a>
-        </dl>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
-
-    <section class="container grid grid-cols-1 sm:grid-cols-2 mt-15 mb-30 sm:my-47.5 lg:my-37.5">
+    <section class="container grid grid-cols-1 sm:grid-cols-2 mt-15 mb-15 sm:my-47.5 lg:my-37.5">
         <% collections.forEach(function(collection){ %>
         <article class="text-grey-blue sm:odd:mr-[0.625rem] sm:even:ml-[0.625rem] lg:odd:mr-[3rem] lg:even:ml-[3rem] mb-[7.5rem] sm:mb-[10rem] lg:mb-[9.375rem] sm:penultimate:mb-0 last:mb-0">
             <header class="mb-3 relative ">
@@ -86,6 +105,11 @@
                     <blockquote class="mb-6 italic font-extralight text-2xl leading-8.5 max-w-[486px]">“<%- collection.quote %>”</blockquote>
             </header>
             <p class="mb-6 text-lg leading-7 font-normal"><%- collection.text %></p>
+            <footer class="flex space-x-3">
+                <!-- <img class="w-11.5 h-11.5 rounded-full" src="<%- collection.social.logo %>"  alt="<%- collection.social.name %>"> -->
+                <img class="mb-8 h-44 w-full object-cover" src="<%- collection.social.logo.src %>?url" alt="<%- collection.social.name %>">
+
+            </footer>
         </article>
         <% }); %>
     </section>
@@ -120,7 +144,7 @@
     </div>
 </footer>
 <script>
-    window.addEventListener('scroll',()=>document.querySelector('body>header').classList[window.scrollY>5 ?'add':'remove']('brand-col'))
+    window.addEventListener('scroll',()=>document.querySelector('body>nav').classList[window.scrollY>5 ?'add':'remove']('brand-col'))
 </script>
 </body>
 </html>
