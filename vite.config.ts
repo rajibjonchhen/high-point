@@ -5,6 +5,7 @@ import { createHtmlPlugin } from "vite-plugin-html"
 import viteCompression from "vite-plugin-compression"
 
 const getLogo = (name) => {
+    console.log(name)
     const path = `./src/img/logo/${name}.svg`;
     return fs.readFileSync(path)
 }
@@ -49,11 +50,24 @@ export default defineConfig({
                                     { type: "image/png", src: "/src/img/display/fashion1.png" },
                                     { type: "image/png", src: "/src/img/display/fashion1.webp" },
                                 ],
-                                social: {
+                                social: [
+                                    {
                                     name: 'fb',
                                     logo: getLogo("fb"),
+                                    link: 'https://www.facebook.com/profile.php?id=100076224881183',
+                                },
+                                    {
+                                    name: 'insta',
+                                    logo: getLogo("insta"),
                                     link: '',
                                 },
+                                    {
+                                    name: 'tiktok',
+                                    logo: getLogo("tiktok"),
+                                    link: '',
+                                }
+                            ],
+                            logo: getLogo("star"),
                             },
                             {
                                 title: "High Point Footwear",
@@ -63,11 +77,24 @@ export default defineConfig({
                                     { type: "image/png", src: "/src/img/display/shoes2.png" },
                                     { type: "image/png", src: "/src/img/display/shoes2.webp" },
                                 ],
-                                social: {
+                                social: [
+                                    {
                                     name: 'fb',
                                     logo: getLogo("fb"),
+                                    link: 'https://www.facebook.com/profile.php?id=61569129662709',
+                                },
+                                    {
+                                    name: 'insta',
+                                    logo: getLogo("insta"),
                                     link: '',
                                 },
+                                    {
+                                    name: 'tiktok',
+                                    logo: getLogo("tiktok"),
+                                    link: '',
+                                }
+                            ],
+                                logo: getLogo("star"),
                             },
                             {
                                 title: "High Point Kitchenware",
@@ -78,14 +105,27 @@ export default defineConfig({
                                     { type: "image/png", src: "/src/img/display/kitchen2.png" },
                                     { type: "image/png", src: "/src/img/display/kitchen2.webp" },
                                 ],
-                                social: {
+                                social: [
+                                    {
                                     name: 'fb',
                                     logo: getLogo("fb"),
+                                    link: 'https://www.facebook.com/profile.php?id=100070137979200',
+                                },
+                                    {
+                                    name: 'insta',
+                                    logo: getLogo("insta"),
                                     link: '',
                                 },
+                                    {
+                                    name: 'tiktok',
+                                    logo: getLogo("tiktok"),
+                                    link: '',
+                                }
+                            ],
+                            logo: getLogo("star"),
                             },
                             {
-                                title: "High Point Fashion2",
+                                title: "High Point Fashion II",
                                 text: "Looking great shouldn’t cost a fortune! We pride ourselves on offering high-quality clothing at cheaper prices. Our commitment to affordability means you can refresh your wardrobe regularly without guilt.",
                                 quote: "Style Smart, Spend Less!",
                                 
@@ -93,11 +133,24 @@ export default defineConfig({
                                     { type: "image/png", src: "/src/img/display/fashion.png" },
                                     { type: "image/png", src: "/src/img/display/fashion.webp" },
                                 ],
-                                social: {
+                                social: [
+                                    {
                                     name: 'fb',
                                     logo: getLogo("fb"),
+                                    link: 'https://www.facebook.com/profile.php?id=100076224881183',
+                                },
+                                    {
+                                    name: 'insta',
+                                    logo: getLogo("insta"),
                                     link: '',
                                 },
+                                    {
+                                    name: 'tiktok',
+                                    logo: getLogo("tiktok"),
+                                    link: '',
+                                }
+                            ],
+                            logo: getLogo("star"),
                             }
                         ]
                     },

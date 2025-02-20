@@ -63,7 +63,7 @@
                     <img class="w-full h-40 object-cover rounded" src="./src/img/logo/hpk.JPG" alt="High Point Kitchenware logo">
                   </a>
                   <a href="#" class="flex flex-col items-center  rounded-lg p-4 transition duration-300 hover:bg-opacity-20">
-                    <h3 class="text-xl font-semibold text-white mb-1">High Point Apparel</h3>
+                    <h3 class="text-xl font-semibold text-white mb-1">High Point Fashion II</h3>
                     <p class="text-sm text-gray-300 mb-4">Tulachhen, Bhaktapur</p>
                     <img class="w-full h-40 object-cover rounded" src="./src/img/logo/hpf.JPG" alt="High Point Apparel logo">
                   </a>
@@ -83,10 +83,11 @@
                 <% if(collection.images) { %>
                     <picture >
                         <% collection.images.forEach((image) => { %><source type="<%- image.type %>" srcset="<%- image.src %>"><% }); %>
-                        <img class="mb-8 h-44 w-full object-cover" src="<%- collection.images[0].src %>?url" alt="<%- collection.title %>">
+                         <img class="mb-8 h-44 w-full object-cover" src="<%- collection.images[0].src %>?url" alt="<%- collection.title %>">
                     </picture>
                     <div class="company-logo-holder px-3.5 absolute top-0 left-0 flex justify-center items-center h-12 w-auto bg-white rounded-br-3xl" >
                         <%- collection.logo %>
+                        
                     </div>
                     <% } %>
                     <h2 class="font-medium text-[32px] leading-9.5 tracking-wider"><%- collection.title %></h2>
@@ -94,9 +95,11 @@
             </header>
             <p class="mb-6 text-lg leading-7 font-normal"><%- collection.text %></p>
             <footer class="flex space-x-3">
-                <!-- <img class="w-11.5 h-11.5 rounded-full" src="<%- collection.social.logo %>"  alt="<%- collection.social.name %>"> -->
-                <!-- <img class="mb-8 h-44 w-full object-cover" src="<%- collection.social.logo.src %>?url" alt="<%- collection.social.name %>"> -->
-
+              <% collection.social.forEach(function(med){ %>
+              <a href="<%- med.link %>" target="_blank">
+                <%- med.logo %>
+              </a>
+              <% }) %>
             </footer>
         </article>
         <% }); %>
