@@ -16,15 +16,13 @@
 <body class="scroll-smooth">
 
 <nav class="fixed w-full top-0 left-0 right-0 z-50    duration-500 ease-in-out">
-    <!-- py-4 fixed w-full top-0 z-50  duration-500 ease-in-out -->
      <div class="container flex justify-between items-center">
 
          <img src="/src/img/logo/brand-nobg.png" alt="visiting card" width="200" height="auto"/>
          <div class="container mx-auto px-4 py-3 flex justify-end items-center">
-             <!-- Your navigation content here -->
-             <a title="Our Email" class="group text-lg leading-5.25 text-center inline-block box-border rounded border border-white hover:border-white active:border-transparent active:bg-blue-light-accent py-3.75 px-3 xs:py-3.125 xs:px-7.56" target="_blank" href="<%- links.email %>">
-                 <svg class="xs:hidden w-5.5 h-4 stroke-white group-hover:stroke-white group-active:stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 16"><path d="M20.75 13.75V2.25a1 1 0 0 0-1-1H2.25a1 1 0 0 0-1 1v11.5a1 1 0 0 0 1 1h17.5a1 1 0 0 0 1-1z"/><path d="M20.75 3.49 11 8 1.25 3.49"/></svg>
-                 <span class="hidden xs:inline text-white group-hover:text-blue-light-accent group-active:text-white select-none">Contact us</span>
+             <a title="Our Email" class="group text-lg leading-5.25 text-center inline-block box-border rounded border border-white hover:border-white active:border-transparent active:bg-blue-light-accent py-3.75 px-3 xs:py-3.125 xs:px-7.56" target="_blank" href="<%- links.whatsapp %>">
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path class="fill-gray-100" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </a>
                 </a>
             </div>
         </div>
@@ -115,13 +113,17 @@
 
     <section class="flex flex-col items-center px-5 py-37.5 bg-pink-100">
         <h2 class="mb-6 font-medium text-3xl sxs:text-[32px] leading-9.5 tracking-wider text-grey-blue select-none">Contact us with</h2>
+        <a target="_blank" title="Our Email" class="text-lg leading-5.25 w-full xs:w-83.75 h-16 flex space-x-6 justify-center items-center mb-3 bg-white rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="<%- links.fb %>">
+          <img src="./src/img/logo/fb.svg" alt="fb icon"/>
+        </a>
+        <a target="_blank" title="Our Email" class="text-lg leading-5.25 w-full xs:w-83.75 h-16 flex space-x-6 justify-center items-center mb-3 bg-white rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="<%- links.insta %>">
+          <img src="./src/img/logo/insta.svg" alt="fb icon"/>
+        </a>
+        <a target="_blank" title="Our What's App" class="text-lg leading-5.25 w-full xs:w-83.75 h-16 flex space-x-6 justify-center items-center mb-3 bg-white rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="https://wa.me/9779841114088">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path class="fill-green-700" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
         <a target="_blank" title="Our Email" class="text-lg leading-5.25 w-full xs:w-83.75 h-16 flex space-x-6 justify-center items-center mb-3 bg-white rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="<%- links.email %>">
             <svg class="w-8"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 18"><path class="fill-sky-700" d="M29.333.333H12A2.674 2.674 0 0 0 9.333 3v12A2.667 2.667 0 0 0 12 17.667h17.333A2.657 2.657 0 0 0 32 15V3A2.667 2.667 0 0 0 29.333.333zm0 4.894-8.666 4.44L12 5.227V3l8.667 4.413L29.333 3v2.227zM6.667 15c0 .227.04.44.066.667h-5.4c-.736 0-1.333-.6-1.333-1.333C0 13.6.597 13 1.333 13h5.334v2zM4 2.334h2.733c-.026.226-.066.44-.066.666v2H4c-.733 0-1.333-.6-1.333-1.333S3.267 2.334 4 2.334zM1.333 9c0-.733.6-1.333 1.334-1.333h4v2.667h-4c-.734 0-1.334-.6-1.334-1.334z"/></svg>
-            <span class="select-none">Email</span>
-        </a>
-        <a target="_blank" title="Our What's App" class="text-lg leading-5.25 w-full xs:w-83.75 h-16 flex space-x-6 justify-center items-center mb-3 bg-white rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="https://wa.me/[+9779841114088]">
-            <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path class="fill-green-700" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            <span class="select-none">What's App</span>
         </a>
     </section>
 </main>
@@ -129,16 +131,21 @@
 <footer class="brand-col">
     <div class="h-20 container flex justify-between items-center">
         <div class="flex flex-row space-x-3 items-center text-xs leading-6 text-blue-light">
-            <img src="/src/img/logo/brand-nobg.png" alt="brand logo" width="150" height="auto"/>
             <span class="select-none text-white">© <%= new Date().getFullYear(); %> High Point</span>
         </div>
-        <div class="flex flex-row space-x-3">
-            <a class="group brand-col" target="_blank" title="Our Email" href="<%- links.email %>">
-                <svg class="w-12 " xmlns="http://www.w3.org/2000/svg" viewBox="0 2 32 32"><path class="fill-gray-100 group-hover:fill-pink-300  group-active:fill-white" d="M21.333 13.333 16 16.667l-5.334-3.334V12L16 15.333 21.333 12v1.333zm0-2.666H10.666c-.74 0-1.333.593-1.333 1.333v8a1.333 1.333 0 0 0 1.333 1.333h10.667A1.333 1.333 0 0 0 22.666 20v-8a1.333 1.333 0 0 0-1.333-1.333z"/></svg>
-            </a>
-            <a class="group brand-col"  target="_blank" title="Our What's App"  href="https://wa.me/[+9779841114088]">
-              <img class="" src="./src/img/logo/whatsapp.svg" alt="whats app icon"/>
-            </a>
+        <div class="flex flex-row space-x-2">
+          <a target="_blank" title="Our Email" class="leading-1.25  xs:w-6 h-6 flex   rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="<%- links.fb %>">
+            <img src="./src/img/logo/fb.svg" alt="fb icon" />
+          </a>
+          <a target="_blank" title="Our Email" class="leading-1.25  xs:w-6 h-6 flex   rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="<%- links.insta %>">
+            <img src="./src/img/logo/insta.svg" alt="fb icon" width="20px"/>
+          </a>
+          <a target="_blank" title="Our What's App" class="leading-1.25  xs:w-6 h-6 flex   rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="https://wa.me/9779841114088">
+            <svg width="20px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path class="fill-green-700" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+          <a target="_blank" title="Our Email" class="leading-1.25  xs:w-6 h-6 flex   rounded-lg hover:shadow-lg active:border-2 active:border-blue-light" href="<%- links.email %>">
+              <svg class="w-8"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 18"><path class="fill-sky-700" d="M29.333.333H12A2.674 2.674 0 0 0 9.333 3v12A2.667 2.667 0 0 0 12 17.667h17.333A2.657 2.657 0 0 0 32 15V3A2.667 2.667 0 0 0 29.333.333zm0 4.894-8.666 4.44L12 5.227V3l8.667 4.413L29.333 3v2.227zM6.667 15c0 .227.04.44.066.667h-5.4c-.736 0-1.333-.6-1.333-1.333C0 13.6.597 13 1.333 13h5.334v2zM4 2.334h2.733c-.026.226-.066.44-.066.666v2H4c-.733 0-1.333-.6-1.333-1.333S3.267 2.334 4 2.334zM1.333 9c0-.733.6-1.333 1.334-1.333h4v2.667h-4c-.734 0-1.334-.6-1.334-1.334z"/></svg>
+          </a>
         </div>
     </div>
 </footer>

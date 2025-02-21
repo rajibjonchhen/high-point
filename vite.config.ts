@@ -39,7 +39,9 @@ export default defineConfig({
                         },
                         links: {
                             email: "mailto:shivaawalwa@gmail.com",
-                            whatsApp: "https://wa.me/[+9779841114088]",
+                            whatsApp: "https://wa.me/9779841114088",
+                            fb: "https://www.facebook.com/profile.php?id=100076224881183",
+                            insta: "https://www.instagram.com/high_point_try_the_new_best?igsh=MTdqODJyamMya3p1Yw%3D%3D&utm_source=qr",
                         },
                         collections: [
                             {
